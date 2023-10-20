@@ -123,6 +123,7 @@ body {
   border: none;
   min-width: 169px;
   margin: 0 auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -275,6 +276,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
@@ -323,6 +325,23 @@ body {
 .link-menu {
   padding: 24px 0 24px 0;
   display: inline-block;
+}
+.link-underline {
+  position: relative;
+  color: var(--pressed-state);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-contacts-transition {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--pressed-state);
+  border-bottom: 2px;
 }
 .list-address {
   display: flex;
@@ -422,6 +441,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sm-link:hover,
 .footer-sm-link:focus {
