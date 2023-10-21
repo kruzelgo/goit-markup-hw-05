@@ -194,7 +194,7 @@ body {
   max-width: 496px;
 }
 .section {
-  padding: 120px;
+  padding-bottom: 120px;
 }
 .section-team {
   background-color: var(--light);
