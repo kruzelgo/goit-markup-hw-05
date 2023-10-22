@@ -132,7 +132,6 @@ body {
 .filter-button-main:hover {
   background: var(--pressed-state);
   color: var(--white-background);
-  border: 1px solid transparent;
 }
 .footer {
   background-color: var(--dark);
